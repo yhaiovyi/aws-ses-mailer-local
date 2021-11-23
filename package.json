@@ -1,0 +1,31 @@
+{
+  "name": "aws-ses-mailer-local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "aws-ses-mailer-local": "./build/server.js"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yurii Haiovyi",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.2",
+    "express": "^5.0.0-alpha.8",
+    "lodash": "^4.17.21",
+    "nodemailer": "^6.7.1",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
