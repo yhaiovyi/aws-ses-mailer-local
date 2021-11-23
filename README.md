@@ -8,10 +8,11 @@ Creates local [Amazon Simple Email Service](https://aws.amazon.com/ses/) compati
 
 # Running the server
 
+It's recommended to use docker to run a server
 ```
-npm install aws-ses-mailer-local -g
-aws-ses-mailer-local
+docker run -p 9323:9323 -v $(pwd)/config.json:/home/node/config.json yhaiovyi/aws-ses-mailer-local
 ```
+For more details on config file please check `--transport-config` option below.
 
 ## CLI Options
 
