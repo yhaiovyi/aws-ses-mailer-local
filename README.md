@@ -1,4 +1,4 @@
-# aws-ses-local
+# aws-ses-mailer-local
 
 Creates local [Amazon Simple Email Service](https://aws.amazon.com/ses/) compatible server and sends emails using a service of your choice specified in a config file
 
@@ -9,8 +9,8 @@ Creates local [Amazon Simple Email Service](https://aws.amazon.com/ses/) compati
 # Running the server
 
 ```
-npm install aws-ses-local -g
-aws-ses-local
+npm install aws-ses-mailer-local -g
+aws-ses-mailer-local
 ```
 
 ## CLI Options
@@ -31,7 +31,7 @@ const AWS - require('aws-sdk')
 const ses = new AWS.SES({ region: 'us-east-1', endpoint: 'http://localhost:9323' })
 ```
 
-Invoke `sendEmail()` with required params:
+`sendEmail()` example:
 
 ```
 ses.sendEmail({
@@ -64,3 +64,14 @@ ses.sendEmail({
     'STRING_VALUE'
   ]
 })
+```
+
+`sendRawEmail()` example:
+
+```
+ses.sendEmail({
+  RawMessage: {
+    Data: 'BINARY_STRING_VALUE' /* required */
+  },
+})
+```
