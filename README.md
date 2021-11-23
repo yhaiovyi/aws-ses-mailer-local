@@ -18,7 +18,7 @@ For more details on config file please check `--transport-config` option below.
 
 | Option  | Short Option | Default | Description |
 | --- | --- | --- | --- | 
-| `--transport-config` | `-c` | (Ethereal service)[https://ethereal.email/] | Specify config json file path, for available options please refer to (Nodemailer documention)[https://nodemailer.com/smtp/] |
+| `--transport-config` | `-c` | [Ethereal service](https://ethereal.email/) | Specify config json file path, for available options please refer to [Nodemailer documention](https://nodemailer.com/smtp/) |
 | `--port` | `-p` | `9323` | Specify port for server to run on |
 
 It is also possible to POST your config to `/transport-config` in the runtime `curl -d @transport-config.json http://localhost:9323/transport-config -H "Content-Type: application/json"`
